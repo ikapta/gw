@@ -1,0 +1,20 @@
+app:
+  name: 'kapta.gw'
+  port: ':8003'
+  allow_origins:
+    - "http://localhost:3000"
+deploy:
+  proj_workspace: '../proj_workspace'
+  runtime_mode: "IO_SSH"
+feishu:
+  # custom bot token
+  wbhk_xiaotan: "xxxx"
+email:
+  smtp_host: "smtp.feishu.cn"
+  smtp_port: 465
+  smtp_email: ""
+  smtp_pass: ""
+ssh:
+  host: ''
+  name: ''
+  pass: ''

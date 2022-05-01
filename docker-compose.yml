@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  front_api_gw:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ./config/:/dist/config/
+      - ./public/:/dist/public/
+      - ./log/:/dist/log/
+      - ../proj_workspace/:/dist/proj_workspace/
+    ports:
+      - 8003:8003
